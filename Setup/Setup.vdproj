@@ -15,13 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_37D04AEBB9754CAB891CED51113119A7"
+        "MsmKey" = "8:_AAC03D03E09F46109F5F64B715B603F3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C2690D4B2C9A42008363098B6C96A683"
+        "MsmKey" = "8:_E55D628C30FA4D9FB474B5C08D6D64B4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C2690D4B2C9A42008363098B6C96A683"
+        "OwnerKey" = "8:_E55D628C30FA4D9FB474B5C08D6D64B4"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +55,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -71,6 +87,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -100,10 +132,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_37D04AEBB9754CAB891CED51113119A7"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AAC03D03E09F46109F5F64B715B603F3"
             {
-            "SourcePath" = "8:..\\Rename\\bin\\Release\\Rename.exe.config"
-            "TargetName" = "8:Rename.exe.config"
+            "SourcePath" = "8:..\\Rename\\bin\\Debug\\Rename and Resize files.exe.config"
+            "TargetName" = "8:Rename and Resize files.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_B045288F74D844BAB486C15630A7E48D"
             "Condition" = "8:"
@@ -120,20 +152,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C2690D4B2C9A42008363098B6C96A683"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E55D628C30FA4D9FB474B5C08D6D64B4"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Rename, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Rename and Resize files, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C2690D4B2C9A42008363098B6C96A683"
+                    "_E55D628C30FA4D9FB474B5C08D6D64B4"
                     {
-                    "Name" = "8:Rename.exe"
+                    "Name" = "8:Rename and Resize files.exe"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:..\\Rename\\bin\\Release\\Rename.exe"
+            "SourcePath" = "8:..\\Rename\\bin\\Debug\\Rename and Resize files.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B045288F74D844BAB486C15630A7E48D"
@@ -239,7 +271,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup"
         "ProductCode" = "8:{07565880-428A-403C-BF9A-FA2B75BE41AA}"
-        "PackageCode" = "8:{7FE8C67D-02BA-4025-B675-ACF4C1FF608B}"
+        "PackageCode" = "8:{81062B1A-E5CD-4170-B4F1-DEEF8E2D61BA}"
         "UpgradeCode" = "8:{2411AC0F-14A9-4671-B299-325B2CFC90D8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -359,29 +391,29 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8ECE363E0294460B90304626A3AA14EB"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BA2ACB02DACD4C788BB0DCF793D5EA87"
             {
-            "Name" = "8:Rename Files"
+            "Name" = "8:Rename and Resize"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_C2690D4B2C9A42008363098B6C96A683"
+            "Target" = "8:_E55D628C30FA4D9FB474B5C08D6D64B4"
             "Folder" = "8:_941D374C64A546DABF82256B1E6246BF"
             "WorkingFolder" = "8:_B045288F74D844BAB486C15630A7E48D"
             "Icon" = "8:_F41196C656D3477AB534DAB6B3C95165"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E4807FE140914AB6BBC2ACD064659B96"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D04A85D3B81645FD842247D3EA256742"
             {
-            "Name" = "8:Rename Files"
+            "Name" = "8:Rename and Resize"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_C2690D4B2C9A42008363098B6C96A683"
+            "Target" = "8:_E55D628C30FA4D9FB474B5C08D6D64B4"
             "Folder" = "8:_AD54D10691BA4784A9A59851CCD1FE02"
             "WorkingFolder" = "8:_B045288F74D844BAB486C15630A7E48D"
             "Icon" = "8:_F41196C656D3477AB534DAB6B3C95165"

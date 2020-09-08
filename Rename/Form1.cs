@@ -34,6 +34,8 @@ namespace Rename
 
         private void textBoxDir_TextChanged(object sender, EventArgs e)
         {
+            //ResetValue();
+            pBar1.Value = 0;
             pathDir = textBoxDir.Text;
             if (pathDir.EndsWith("\\"))
             {
@@ -61,18 +63,25 @@ namespace Rename
 
         private void btnRename_Click(object sender, EventArgs e)
         {
-            des_name = textBoxName.Text;
-            if (des_name == "")
+            bool flag;
+            string temp = textBoxName.Text;
+            if (temp == "")
             {
-                MessageBox.Show("New name of file can't empty!!!");
+                MessageBox.Show("New name of files can't empty!!!");
                 return;
             }
-            if (!IsNumeric(des_name))
+            if (!IsNumeric(temp))
             {
-                MessageBox.Show("Rename file error. Require only number in name!!!");
-                return;
+                number = 1;
+                flag = false;
+                //MessageBox.Show("Rename file error. Require only number in name!!!");
+                //return;
             }
-            number = Convert.ToUInt32(des_name);
+            else
+            {
+                number = Convert.ToUInt32(temp);
+                flag = true;
+            }
             try
             {
 
@@ -84,8 +93,9 @@ namespace Rename
                     foreach (FileInfo file in Files)
                     {
                         src_name = file.FullName;
-                        des_name = Getnewname(number);
-                        number += 1;
+                        if (flag) des_name = Getnewname(number);
+                        else des_name = temp + "_(" + Convert.ToString(number) + ")";
+                        number ++;
                         string newpath = pathDir + "\\" + des_name + file.Extension;
                         if (!File.Exists(newpath)) file.MoveTo(newpath);
                         pBar1.Value += 1;
@@ -120,7 +130,9 @@ namespace Rename
         }
         private void textBoxLength_TextChanged(object sender, EventArgs e)
         {
-            string temp = textBoxLength.Text;
+            string temp;
+            if (textBoxLength.Text != "") temp = textBoxLength.Text;
+            else temp = "6";
             len = Convert.ToUInt16(temp);
         }
         public void BrowseFolder()
